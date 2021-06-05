@@ -76,11 +76,12 @@ if __name__ == '__main__':
     number = 1
     frame = 15
     source_dir = 'videos'
+    auto = 1
     
     for file in os.listdir("./"+source_dir):
         if file.endswith(".mp4"):
             path=os.path.join("/"+source_dir, file)
-            frame_capture(path, counter, number, frame, 1)
+            frame_capture(path, counter, number, frame, auto)
             print(path)
         number = number + 1
 
